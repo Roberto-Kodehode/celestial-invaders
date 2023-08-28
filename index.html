@@ -1,0 +1,63 @@
+<!-- ################################################# -->
+<!-- ### Space invaders tutorial by Coding by Adam ### -->
+<!-- ### https://youtu.be/qCBiKJbLcFI?t=0 ############ -->
+<!-- ################################################# -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>CELESTIAL INVADERS</title>
+    <script type="module" src="index.js" defer></script>
+  </head>
+  <body>
+    <div id="title">
+      <h1 class="header">CELESTIAL</h1>
+      <h1 class="header">INVADERS</h1>
+    </div>
+
+    <form>
+      <input
+        type="text"
+        id="player-name-input"
+        name="player-name-input"
+        maxlength="3"
+        style="text-transform: uppercase"
+        placeholder="ENTER INITIALS"
+        required
+      />
+      <button id="name-submit-button">PLAY</button>
+    </form>
+
+    <div id="player-score">
+      <div class="display-flex">
+        <p>PLAYER:&nbsp</p>
+        <p id="player-name-display"></p>
+      </div>
+      <div class="display-flex">
+        <p>SCORE:&nbsp</p>
+        <p id="score-display"></p>
+      </div>
+    </div>
+
+    <div id="invaders">
+      <img src="Images/invader-green.png" alt="Green Space Invader" />
+      <img src="Images/invader-orange.png" alt="Orange Space Invader" />
+      <img src="Images/invader-pink.png" alt="Pink Space invader" />
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <div id="display-game-end"></div>
+  </body>
+  <!-- background music when game starts -->
+</html>
